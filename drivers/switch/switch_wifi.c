@@ -117,7 +117,7 @@ static int wifi_switch_probe(struct platform_device *pdev)
 	
 	printk(KERN_INFO "get into wifi_power");
 
-	wifi_power(0);
+	wifi_power(1);
 
 /*	if(switch_data->gpio_switch == IMAPX_GPIO_ERROR)
 	{
