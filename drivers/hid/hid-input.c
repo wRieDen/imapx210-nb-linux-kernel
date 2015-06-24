@@ -1038,7 +1038,7 @@ void hidinput_hid_event(struct hid_device *hid, struct hid_field *field, struct 
 	} else
 		input_event(input, usage->type, usage->code, value);	
     if(value)
-        printk("Code= %d,type=%d\n",usage->code,usage->type); //nse20110727
+        //printk("Code= %d,type=%d\n",usage->code,usage->type); //nse20110727
 	if ((field->flags & HID_MAIN_ITEM_RELATIVE) && (usage->type == EV_KEY))
 		input_event(input, usage->type, usage->code, 0);
 }
